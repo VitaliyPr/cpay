@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CPay</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            
+            if (pageWidth > 1279) {
+                let value = (pageWidth * 10 / 1280).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20230212185734"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20230212185734">
+
+
+
+</head>
+
+<body >
+
+  <main class="cpay">
+    <a href="/" class="cpay__logo logo">
+      <img src="img/cpay-logo.svg" alt="" loading="lazy" class="img-full">       
+    </a>
+    <a href="#" class="cpay__support">support@cpay.team</a>
+    <div class="cpay__wrap">
+      <div class="cpay__merchant">
+        <div class="cpay-merchant__logo">
+          <img src="img/merchant-logo.svg" alt="" loading="lazy" class="img-full">
+        </div>
+        <p class="cpay-merchant__name">
+          Merchant name
+        </p>
+      </div>
+      <div class="cpay__body">
+        <div class="cpay-body__head">
+          <h2 class="cpay-body__head_title">Payment</h2>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Status</h4>
+          <p class="payment__item_label payment__item_label-green">Paid</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Status</h4>
+          <p class="payment__item_label payment__item_label-yellow">Partially paid</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Status</h4>
+          <p class="payment__item_label payment__item_label-red">Failed</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Status</h4>
+          <p class="payment__item_label payment__item_label-red">Expired</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Amount</h4>
+          <p class="payment__item_info">200 usdt</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Crypto</h4>
+          <p class="payment__item_info">USDT</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Network</h4>
+          <p class="payment__item_info">BEP20</p>
+        </div>
+        <div class="payment__item">
+          <h4 class="payment__item_title">Total amount:</h4>
+          <p class="payment__item_info">0.2345345</p>
+        </div>
+        <div class="invoice">
+          <h4 class="invoice__title">Invoice link</h4>
+          <p class="invoice__copy" id="invoice_copy">cpay.team/payment/id95839573</p>
+          <div class="invoice__btn copybtn" id="invoice_btn">
+           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.8321 4H10.1101C9.13368 4 8.33926 4.79441 8.33926 5.77083V5.98817H7.16805C6.19163 5.98817 5.39722 6.78258 5.39722 7.759V18.2292C5.39722 19.2057 6.19163 20.0001 7.16805 20.0001H13.89C14.8664 20.0001 15.6608 19.2057 15.6608 18.2292V18.0119H16.832C17.8084 18.0119 18.6028 17.2175 18.6028 16.2411V5.77083C18.6029 4.79441 17.8085 4 16.8321 4ZM14.5186 18.2292C14.5186 18.5758 14.2366 18.8578 13.8901 18.8578H7.16805C6.82148 18.8578 6.53949 18.5758 6.53949 18.2292V7.75892C6.53949 7.41236 6.82148 7.13037 7.16805 7.13037H13.89C14.2366 7.13037 14.5185 7.41236 14.5185 7.75892L14.5186 18.2292ZM17.4606 16.2411C17.4606 16.5876 17.1786 16.8696 16.8321 16.8696H15.6609V7.75892C15.6609 6.78251 14.8664 5.98809 13.8901 5.98809H9.48154V5.77075C9.48154 5.42419 9.76353 5.1422 10.1101 5.1422H16.8321C17.1786 5.1422 17.4606 5.42419 17.4606 5.77075V16.2411Z" fill="#6F6AF8"/>
+              </svg>                               
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cpay-payment__footer">
+      <a href="#" class="cpay-payment__footer_link">Privacy policy</a>
+      <a href="#" class="cpay-payment__footer_link">Terms and conditions</a>
+    </div>
+
+    <div class="cpay__mess" id="invoice__mess">
+      <p class="cpay__mess_p">Invoice link copied</p>
+    </div>
+    <div class="cpay__mess" id="total__mess">
+      <p class="cpay__mess_p">Total amount copied</p>
+    </div>
+    <div class="cpay__mess" id="address__mess">
+      <p class="cpay__mess_p">Address for the payment copied</p>
+    </div>
+  </main>
+
+
+
+  <script src="js/plugins/plugins.min.js?_v=20230212185734"></script>
+
+<script src="js/app.min.js?_v=20230212185734"></script>
+ 
+</body>
+
+</html>

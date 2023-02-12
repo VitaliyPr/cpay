@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CPay</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            
+            if (pageWidth > 1279) {
+                let value = (pageWidth * 10 / 1280).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20230212185734"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20230212185734">
+
+
+
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="md">
+    <div class="header__wrap">
+      <div class="header__body">
+        <div class="header__logo logo">
+          <img src="img/cpay-logo.svg" alt="" loading="lazy" class="img-full">       
+        </div>
+        <a href="#" class="header__support support">support@cpay.team</a>
+      </div>
+      <div class="header__btns">
+        <a href="#login" data-fancybox class="header__btn btn btn_primary">Login</a>
+        <a href="#sign-up" data-fancybox class="header__btn btn">Sign up</a>
+      </div>
+      <a href="#login" data-fancybox class="header__login">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 4.00001C7.58717 4.00001 4 7.58718 4 12.0001C4 16.413 7.58717 20.0001 12.0001 20.0001C14.4049 20.0001 16.5647 18.9349 18.0321 17.251C18.033 17.25 18.034 17.2492 18.0349 17.2482C18.0355 17.2473 18.0361 17.2464 18.0367 17.2455C19.2592 15.8403 20 14.0055 20 12.0001C20 7.58717 16.4128 4 11.9999 4L12.0001 4.00001ZM12.0001 4.94119C15.9041 4.94119 19.059 8.09608 19.059 12.0001C19.059 13.504 18.5902 14.8956 17.7916 16.0396C16.9698 14.4929 15.567 13.3524 13.9201 12.8475C14.6817 12.2665 15.1756 11.3493 15.1756 10.3218C15.1756 8.57385 13.7479 7.14715 12.0001 7.14715C10.2524 7.14715 8.82553 8.57397 8.82553 10.3218C8.82553 11.3491 9.31873 12.2655 10.0801 12.8465C8.4331 13.3517 7.03123 14.4942 6.20979 16.0414C5.41035 14.8971 4.94135 13.5047 4.94135 12C4.94135 8.09593 8.09623 4.94105 12.0003 4.94105L12.0001 4.94119ZM12.0001 8.08836C13.2393 8.08836 14.2336 9.08257 14.2336 10.3219C14.2336 11.561 13.2394 12.5563 12.0001 12.5563C10.7609 12.5563 9.76656 11.561 9.76656 10.3219C9.76656 9.08268 10.7608 8.08836 12.0001 8.08836ZM12.0001 13.5013C14.2328 13.5013 16.2404 14.8208 17.1361 16.8467C15.8498 18.2093 14.0258 19.059 12.0001 19.059C9.97394 19.059 8.15032 18.2089 6.86402 16.8457C7.75935 14.819 9.76691 13.5011 12.0001 13.5011V13.5013Z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="page">
+    <section class="hero">
+  <div class="md">
+    <div class="hero__wrap">
+      <div class="hero__body">
+        <h1 class="hero__body-title ttitle">Easiest way <br class="mob"> to <span>accept crypto</span></h1>
+        <ul class="hero__body-list list">
+          <li class="list__item">Never touch crypto - Get paid in USD, EUR, GBP, and others directly to your bank account</li>
+          <li class="list__item">Fees - Lowest fees on the market, 3x lower than credit card</li>
+          <li class="list__item">Fastest payment process - 30 seconds</li>
+        </ul>
+        <a href="#" class="hero__body-btn btn">Get started</a>
+      </div>
+      <div class="hero__picture">
+        <img src="img/hero/hero-img.png" alt="" loading="lazy" class="img-full">
+      </div>
+    </div>
+    
+  </div>
+  <div class="hero__bg">
+    <img src="img/hero/hero-bg.svg" alt="" loading="lazy" class="img-full">
+  </div>
+  <div class="hero__bg_color">
+    <img src="img/hero/hero-bg-color.png" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+    <section class="l-wallet">
+  <div class="md">
+    <div class="l-wallet__wrap">
+      <div class="l-wallet__item">
+        <img src="img/wallet/coinbase.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/binance.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/metamask.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/kraken.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/crypto.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/electrum.svg" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="l-wallet__item">
+        <img src="img/wallet/trezor.svg" alt="" loading="lazy" class="img-full">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="accept">
+  <div class="md">
+    <div class="accept__wrap">
+      <h2 class="accept__title mtitle">Accept crypto anywhere</h2>
+      <div class="accept__body">
+        <div class="accept__body-item accept__item">
+          <div class="accept__item-icon">
+            <img src="img/accept/accept-logo1.svg" alt="" loading="lazy" class="img-full">
+          </div>
+          <h4 class="accept__item-title">On your website</h4>
+          <div class="accept__item-p p">Accept payments, donations and deposits in cr online from your customers</div>
+        </div>
+        <div class="accept__body-item accept__item">
+          <div class="accept__item-icon">
+            <img src="img/accept/accept-logo2.svg" alt="" loading="lazy" class="img-full">
+          </div>
+          <h4 class="accept__item-title">On your app</h4>
+          <div class="accept__item-p p">Accept payments quickly with a great inter-app integration</div>
+        </div>
+        <div class="accept__body-item accept__item">
+          <div class="accept__item-icon">
+            <img src="img/accept/accept-logo3.svg" alt="" loading="lazy" class="img-full">
+          </div>
+          <h4 class="accept__item-title">By Email</h4>
+          <div class="accept__item-p p">Send crypto invoices as easily as send an email</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accept__bg">
+    <img src="img/accept/accept-bg.svg" alt="" loading="lazy" class="img-full">
+  </div>
+  <div class="accept__coin">
+    <img src="img/accept/accept-coin.svg" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+    <section class="block">
+  <div class="block__wrap">
+    <div class="block__picture">
+      <img src="img/block/block-img1.png" alt="" loading="lazy" class="img-full">
+    </div>
+    <div class="block__body">
+      <h2 class="block__body-title mtitle">Accept crypto<br class="mob">
+        and get paid in cash</h2>
+      <ul class="block__body-list list">
+        <li class="list__item">Receive funds directly to your bank account</li>
+        <li class="list__item">Bank deposits in 50 countries, settled in USD, EUR, GBP and more</li>
+        <li class="list__item">Get settled in cash or crypto</li>
+        <li class="list__item">Save 80% on transactions cost</li>
+      </ul>
+    </div>
+  </div>
+  <div class="block__bg">
+    <img src="img/block/block-color-bg.png" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+    <section class="block-reverse">
+  <div class="md">
+    <div class="block-reverse__wrap">
+      <div class="block-reverse__body">
+        <h2 class="block-reverse__body-title mtitle">Get access to $1 trillion<br class="mob"> crypto market</h2>
+        <ul class="block-reverse__body-list list">
+          <li class="list__item">15 most used coins and more coming</li>
+          <li class="list__item">4 most used stablecoins, reduce volatility</li>
+          <li class="list__item">5 top exchanges per customer market</li>
+          <li class="list__item">15 most popular wallets and more coming</li>
+        </ul>
+      </div>
+      <div class="block-reverse__picture">
+        <img src="img/block/block-img2.png" alt="" loading="lazy" class="img-full">
+      </div>
+    </div>
+    <div class="block-reverse__coin">
+      <img src="img/block/block-coin.svg" alt="" loading="lazy" class="img-full">
+    </div>
+  </div>
+</section>
+    <section class="integrate">
+  <div class="integrate__wrap">
+    <div class="integrate__head">
+      <h2 class="integrate__head-title mtitle">Why you should integrate our solution</h2>
+    </div>
+    <div class="integrate__body">
+      <div class="integrate__body-item integrate__item">
+        <div class="integrate__item-icon">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="52" cy="52" r="52" fill="#1E202B"/>
+            <path d="M69.3983 66.2692H65.6639V59.5448C65.6639 59.2125 65.3948 58.9433 65.0624 58.9433H60.1217C59.7893 58.9433 59.5202 59.2125 59.5202 59.5448V66.2692H58.0306V56.0185C58.0306 55.6865 57.7611 55.4173 57.4291 55.4173H52.4886C52.1563 55.4173 51.8871 55.6865 51.8871 56.0185V66.2692H50.3975V51.6502C50.3975 51.3178 50.1283 51.0487 49.796 51.0487H44.8556C44.5235 51.0487 44.254 51.3178 44.254 51.6502V66.2692H42.7653V46.2717C42.7653 45.9397 42.4961 45.6702 42.1638 45.6702H37.2234C36.8913 45.6702 36.6219 45.9397 36.6219 46.2717V66.2692H33.6015C33.2692 66.2692 33 66.5384 33 66.8707C33 67.2028 33.2692 67.4722 33.6015 67.4722H69.3985C69.7308 67.4722 70 67.2028 70 66.8707C70 66.5384 69.7307 66.2692 69.3983 66.2692ZM37.8237 66.2692V46.8729H41.5633V66.2692H37.8237ZM45.4572 66.2692V52.2513H49.1959V66.2692H45.4572ZM53.0906 66.2692L53.0909 56.6197H56.8293V66.2692H53.0906ZM60.724 66.2692L60.7243 60.1463H64.4639V66.2692H60.724ZM60.2817 49.3027C62.5763 49.3027 64.7769 48.391 66.3993 46.7686C68.0221 45.1462 68.9335 42.9456 68.9335 40.6512C68.9335 38.3568 68.0221 36.1562 66.3993 34.5338C64.7769 32.9114 62.5767 32 60.282 32C57.9876 32 55.787 32.9114 54.1646 34.5338C52.5422 36.1562 51.6308 38.3568 51.6308 40.6512C51.6332 42.9447 52.5449 45.1434 54.1667 46.7655C55.7882 48.3873 57.9866 49.2997 60.2802 49.3027H60.2817ZM60.2817 33.2027C62.2572 33.2027 64.1521 33.9872 65.5489 35.3843C66.9457 36.781 67.7305 38.6757 67.7305 40.6509C67.7305 42.6265 66.9457 44.5211 65.5489 45.9178C64.1521 47.3146 62.2575 48.0994 60.282 48.0994C58.3067 48.0994 56.412 47.3146 55.0153 45.9178C53.6183 44.5211 52.8337 42.6264 52.8337 40.6509C52.8362 38.6769 53.6213 36.784 55.0175 35.3879C56.4133 33.9918 58.3061 33.2063 60.2802 33.2039L60.2817 33.2027ZM58.8156 42.7172C58.8156 42.3852 58.5461 42.1157 58.2141 42.1157C57.8818 42.1157 57.6126 42.3852 57.6126 42.7172C57.6135 43.3193 57.8183 43.9033 58.1932 44.3745C58.5682 44.8457 59.0912 45.1759 59.678 45.312V45.7881C59.678 46.1205 59.9472 46.3896 60.2792 46.3896C60.6115 46.3896 60.8807 46.1205 60.8807 45.7881V45.312C61.6689 45.1302 62.3317 44.5998 62.6821 43.8705C63.0325 43.1415 63.0325 42.2926 62.6821 41.5633C62.3317 40.8342 61.6689 40.3038 60.8807 40.1218V37.2534C61.1376 37.369 61.3559 37.5563 61.5089 37.7927C61.6621 38.0291 61.7437 38.3047 61.744 38.5864C61.744 38.9184 62.0132 39.1879 62.3455 39.1879C62.6775 39.1879 62.9467 38.9184 62.9467 38.5864C62.9458 37.9843 62.7413 37.4006 62.3664 36.9294C61.9917 36.4585 61.4684 36.128 60.8822 35.9919V35.5155C60.8822 35.1832 60.6128 34.914 60.2807 34.914C59.9484 34.914 59.6792 35.1832 59.6792 35.5155V35.9919C58.8907 36.1737 58.2276 36.7038 57.8772 37.4331C57.5268 38.1624 57.5268 39.0113 57.8772 39.7407C58.2276 40.4697 58.8907 41.0001 59.6792 41.1818V44.0502C59.4223 43.9346 59.204 43.7473 59.0511 43.5109C58.8978 43.2745 58.8159 42.9989 58.8156 42.7172ZM61.744 42.7172C61.7433 42.9986 61.6615 43.2739 61.5085 43.51C61.3552 43.7464 61.1372 43.9334 60.8806 44.0487V41.3849C61.1375 41.5005 61.3555 41.6878 61.5085 41.9242C61.6615 42.1602 61.7433 42.4358 61.744 42.7172ZM58.8156 38.5864C58.8162 38.305 58.8981 38.0296 59.0513 37.7936C59.2043 37.5575 59.4226 37.3705 59.6792 37.2552V39.9181C59.4223 39.8029 59.2043 39.6159 59.051 39.3795C58.8978 39.1434 58.8159 38.8678 58.8156 38.5864Z" fill="white"/>
+          </svg>            
+        </div>
+        <p class="integrate__item-p p">Save up to 80% on transaction processing fees</p>
+      </div>
+      <div class="integrate__body-item integrate__item">
+        <div class="integrate__item-icon">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="52" cy="52" r="52" fill="#1E202B"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.9535 57.1764C45.3017 57.1764 45.5326 57.407 45.5326 57.7555C45.5326 58.1037 45.3017 58.3346 44.9535 58.3346H34.935C34.5866 58.3346 34.356 58.1037 34.356 57.7555C34.356 57.407 34.5866 57.1764 34.935 57.1764H44.9535ZM31.5791 52.3136H41.5976C41.9458 52.3136 42.1764 52.5442 42.1764 52.8925C42.1764 53.2216 41.9708 53.4456 41.6543 53.4695L41.5976 53.4716H31.5791C31.2306 53.4716 31 53.2409 31 52.8925C31 52.5635 31.2058 52.3396 31.5221 52.3157L31.5791 52.3136ZM34.9353 47.4506H44.9537C45.302 47.4506 45.5328 47.6814 45.5328 48.0296C45.5328 48.3586 45.327 48.5828 45.0107 48.6067L44.9538 48.6087H34.9353C34.5891 48.6087 34.3562 48.3758 34.3562 48.0296C34.3562 47.7007 34.562 47.4765 34.8783 47.4526L34.9353 47.4506ZM66.429 46.5579C67.4391 48.5309 68 50.7654 68 53.1228C68 61.1731 61.4563 67.7168 53.406 67.7121C49.527 67.7121 45.8779 66.208 43.0982 63.4281C42.8673 63.1973 42.8673 62.8491 43.0982 62.6184C43.3288 62.3875 43.6773 62.3875 43.9079 62.6184C46.4547 65.1677 49.8136 66.5565 53.4036 66.5565C60.8159 66.5565 66.8374 60.5355 66.8374 53.1226C66.8374 51.1005 66.3838 49.1761 65.5706 47.4517L66.429 46.5579ZM64.6535 48.407C65.279 49.8721 65.6249 51.4853 65.6249 53.1796C65.6249 59.8974 60.183 65.3397 53.4648 65.3397C50.9768 65.3397 48.6017 64.5863 46.5753 63.1974C46.2858 63.0256 46.227 62.6774 46.4012 62.3877C46.5753 62.1569 46.9235 62.0981 47.2697 62.2678C49.0632 63.5413 51.2078 64.1792 53.4653 64.1792C59.5457 64.1792 64.4676 59.2571 64.4676 53.1769C64.4676 51.8205 64.2227 50.5218 63.7746 49.3225L64.6535 48.407ZM64.5021 43.3491C65.0182 43.2786 65.522 43.5469 65.7494 44.0143C65.9784 44.4834 65.8796 45.045 65.5061 45.4075C61.2469 49.6763 58.1685 53.1385 53.8594 57.4559C53.4186 57.9029 52.7079 57.9359 52.2278 57.5312L47.0068 53.1133C46.7604 52.9077 46.6067 52.6128 46.5801 52.2928C46.5518 51.9728 46.6522 51.6558 46.8594 51.4112C47.0663 51.1647 47.3629 51.0127 47.6815 50.986C48.0014 50.9594 48.3182 51.0614 48.563 51.2683L52.9306 54.9583C56.7676 51.0689 59.7784 47.743 63.7994 43.7132C63.9859 43.517 64.234 43.3884 64.5023 43.3491L64.5021 43.3491ZM53.4645 41.0193C56.5325 41.0193 59.3344 42.1542 61.4737 44.0275L60.6736 44.8629C58.7434 43.1881 56.2233 42.1751 53.4648 42.1751C51.1485 42.1751 48.8887 42.8718 47.0363 44.2606C46.7469 44.4347 46.4007 44.3759 46.2266 44.1453C46.0525 43.9147 46.1113 43.5097 46.3419 43.3356C48.4276 41.8289 50.9181 41.0192 53.4649 41.0192L53.4645 41.0193ZM56.0705 35.0001C56.4187 35.0001 56.6496 35.2307 56.6496 35.5792C56.6496 35.9081 56.4438 36.1323 56.1275 36.1562L56.0705 36.1582H53.985V38.5899C57.3885 38.7027 60.4599 39.9835 62.8697 42.0495L63.0195 42.1795L63.1332 42.2932L62.3254 43.1376C59.9281 41.0298 56.8008 39.7455 53.403 39.7455C49.6981 39.7455 46.2236 41.2521 43.618 43.9732C43.3873 44.2038 43.0389 44.2038 42.8082 43.9732C42.5774 43.7424 42.5774 43.3941 42.8082 43.1635C45.4246 40.3786 48.8757 38.8212 52.618 38.6006L52.8263 38.5898V36.1582H50.7996C50.4511 36.1582 50.2205 35.9273 50.2205 35.5791C50.2205 35.2501 50.4263 35.026 50.7426 35.0021L50.7996 35L56.0705 35.0001Z" fill="white"/>
+          </svg>            
+        </div>
+        <p class="integrate__item-p p">Make customers pay in 30 seconds</p>
+      </div>
+      <div class="integrate__body-item integrate__item">
+        <div class="integrate__item-icon">
+          <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="52" cy="52" r="52" fill="#1E202B"/>
+            <path d="M69.7875 59.9758C69.7875 56.1322 66.8202 53.0021 63.0619 52.669L63.0622 34.8299C63.0622 33.8218 62.2262 33.0003 61.1988 33.0003L40.8635 33C39.8358 33 39 33.8219 39 34.8296V68.1877C39 69.186 39.836 70 40.8635 70H61.198C62.2257 70 63.0615 69.186 63.0615 68.1877V67.2832C66.8198 66.9501 69.7871 63.8199 69.7871 59.9764L69.7875 59.9758ZM61.1987 68.7061H40.8641C40.5487 68.7061 40.2924 68.4741 40.2924 68.1872V34.8291C40.2924 34.5372 40.5543 34.2929 40.8641 34.2929H61.1987C61.5085 34.2929 61.7705 34.5375 61.7705 34.8291V52.669C59.9312 52.8321 58.2853 53.6482 57.0826 54.9157H43.7467C43.3902 54.9157 43.1009 55.2058 43.1009 55.5624C43.1009 55.919 43.3902 56.2091 43.7467 56.2091H56.1156C55.4777 57.2727 55.0906 58.4982 55.0623 59.8196L43.747 59.8193C43.3905 59.8193 43.1012 60.1095 43.1012 60.4661C43.1012 60.8226 43.3905 61.1128 43.747 61.1128H55.1617C55.376 62.4812 55.9665 63.7123 56.8258 64.7233H43.7473C43.3907 64.7233 43.1014 65.0134 43.1014 65.37C43.1014 65.7266 43.3907 66.0167 43.7473 66.0167H58.2135C59.2388 66.7328 60.4582 67.1661 61.7713 67.2825V68.1871C61.771 68.474 61.5147 68.7059 61.1992 68.7059L61.1987 68.7061ZM62.4163 66.0545C59.0646 66.0545 56.3375 63.3275 56.3375 59.9757C56.3375 56.6239 59.0646 53.8969 62.4163 53.8969C65.7687 53.8969 68.4958 56.6239 68.4958 59.9757C68.4961 63.3275 65.769 66.0545 62.4163 66.0545Z" fill="white"/>
+            <path d="M43.7464 51.3071H58.3165C58.6731 51.3071 58.9623 51.017 58.9623 50.6604C58.9623 50.3038 58.673 50.0137 58.3165 50.0137H43.7464C43.3898 50.0137 43.1006 50.3038 43.1006 50.6604C43.1003 51.017 43.3899 51.3071 43.7464 51.3071Z" fill="white"/>
+            <path d="M47.0991 45.9732C47.2228 46.0852 47.3789 46.142 47.5344 46.142C47.7096 46.142 47.8845 46.0711 48.0124 45.9306L55.007 38.2494C55.2468 37.986 55.2277 37.5759 54.9643 37.336C54.7009 37.0961 54.2923 37.112 54.051 37.3786L47.0564 45.0599C46.8169 45.3236 46.8357 45.7334 47.0991 45.9732Z" fill="white"/>
+            <path d="M48.2971 41.3434C48.8901 41.3434 49.4809 41.1035 49.9107 40.632C50.7197 39.7425 50.6553 38.3608 49.7663 37.5515C49.3357 37.1588 48.786 36.9553 48.1954 36.9853C47.6134 37.0121 47.0772 37.2646 46.6859 37.695C46.2931 38.1256 46.0921 38.6839 46.1197 39.2659C46.1465 39.8479 46.399 40.3841 46.8302 40.7769C47.2473 41.1572 47.7726 41.3433 48.2971 41.3433L48.2971 41.3434ZM47.641 38.566C47.8003 38.3908 48.0188 38.2885 48.256 38.2773C48.2701 38.2759 48.2845 38.2759 48.2986 38.2759C48.5203 38.2759 48.7307 38.3579 48.8957 38.5078C49.2584 38.8373 49.2846 39.4006 48.9547 39.7618C48.6252 40.1246 48.062 40.1514 47.7001 39.8218C47.5243 39.6625 47.4208 39.4432 47.41 39.2051C47.3991 38.9682 47.4808 38.7409 47.641 38.566Z" fill="white"/>
+            <path d="M52.1539 42.6747C51.7611 43.1053 51.5601 43.6636 51.5877 44.2456C51.6145 44.8277 51.867 45.3638 52.2982 45.7566C52.7154 46.1367 53.2406 46.3228 53.7651 46.3228C54.358 46.3228 54.9488 46.0829 55.3786 45.6114C55.7705 45.1807 55.9715 44.6224 55.9442 44.0389C55.9166 43.4583 55.6644 42.9221 55.2346 42.5312C54.3454 41.7219 52.9637 41.7834 52.1538 42.6746L52.1539 42.6747ZM54.3636 43.4869H54.3645C54.5397 43.6462 54.642 43.8638 54.6531 44.1004C54.6649 44.3385 54.5829 44.5658 54.423 44.7407C54.0934 45.1034 53.5302 45.1302 53.1683 44.8006C52.9925 44.6413 52.8891 44.422 52.8782 44.1839C52.867 43.9473 52.949 43.72 53.1084 43.5451C53.2841 43.3526 53.5249 43.255 53.766 43.255C53.9794 43.255 54.194 43.3323 54.3636 43.4869Z" fill="white"/>
+            <path d="M62.4162 57.0281C60.7909 57.0281 59.4692 58.3515 59.4692 59.976C59.4692 61.6004 60.7909 62.9238 62.4162 62.9238C64.0416 62.9238 65.3632 61.6004 65.3632 59.976C65.3635 58.3515 64.0418 57.0281 62.4162 57.0281ZM62.4162 61.6307C61.5037 61.6307 60.7609 60.8893 60.7609 59.976C60.7609 59.0626 61.5038 58.3213 62.4162 58.3213C63.3287 58.3213 64.0715 59.0626 64.0715 59.976C64.0718 60.8893 63.3287 61.6307 62.4162 61.6307Z" fill="white"/>
+          </svg>            
+        </div>
+        <p class="integrate__item-p p">Easily pay taxes without dealing with crypto directly</p>
+      </div>
+    </div>
+    <div class="integrate__table">
+      <div class="integrate__table-item">
+        <img src="img/integrate/integrate-table.png" alt="" loading="lazy" class="img-full">
+      </div>
+      <div class="integrate__table-item_mob">
+        <img src="img/integrate/integrate-table-mob.png" alt="" loading="lazy" class="img-full">
+      </div>
+    </div>
+  </div>
+  <div class="integrate__bg">
+    <img src="img/integrate/integrate-bg-color.png" alt="" loading="lazy" class="img-full">
+  </div>
+  <div class="integrate__coin">
+    <img src="img/integrate/integrate-coin.svg" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+    <section class="ready">
+  <div class="md">
+    <div class="ready__wrap">
+     <div class="ready__body">
+      <h2 class="ready__title mtitle">Ready to get started?</h2>
+      <p class="ready__p p">Join the thousands of businesses already accepting crypto payments. It's free to sign up.</p>
+      <a href="#" class="ready__btn btn">Get started</a>
+     </div>
+    </div>
+  </div>
+  <div class="ready__coin">
+    <img src="img/ready/ready-coin.svg" alt="" loading="lazy" class="img-full">
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="md">
+    <div class="footer__wrap">
+      <div class="footer__body">
+        <div class="footer__logo logo">
+          <img src="img/cpay-logo.svg" alt="" loading="lazy" class="img-full">       
+        </div>
+        <a href="#" class="footer__support support">support@cpay.team</a>
+      </div>
+      <div class="footer__content">
+        <div class="footer__btns">
+          <a href="#" class="footer__btns-item">Privacy policy</a>
+          <a href="#" class="footer__btns-item">Terms and conditions</a>
+        </div>
+        <div class="footer__copy p">© СPay 2023</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bg">
+    <img src="img/footer-bg2.png" alt="" loading="lazy" class="img-full">
+  </div>
+  <div class="footer__bg-color">
+    <img src="img/footer-color.png" alt="" loading="lazy" class="img-full">
+  </div>
+</footer>
+  </main>
+
+  <div class="cookie">
+  <div class="cookie__wrap">
+    <div class="cookie__icon">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="21.5" fill="#252A3F" stroke="#252A3F"/>
+        <path d="M16.1539 14.9231C15.4757 14.9231 14.9231 15.4757 14.9231 16.1539C14.9231 16.8321 15.4757 17.3846 16.1539 17.3846C16.8321 17.3846 17.3846 16.8321 17.3846 16.1539C17.3846 15.4757 16.8321 14.9231 16.1539 14.9231ZM16.1539 16.6311C15.8776 16.6311 15.6766 16.405 15.6766 16.1538C15.6766 15.9027 15.9027 15.6766 16.1539 15.6766C16.4302 15.6766 16.6311 15.9027 16.6311 16.1538C16.6311 16.405 16.4302 16.6311 16.1539 16.6311Z" fill="white"/>
+        <path d="M20.1539 19.8461C20.832 19.8461 21.3846 19.2935 21.3846 18.6153C21.3846 17.9371 20.8321 17.3845 20.1539 17.3845C19.4757 17.3845 18.9231 17.9371 18.9231 18.6153C18.9231 19.2935 19.4757 19.8461 20.1539 19.8461ZM20.1539 18.1129C20.4302 18.1129 20.6311 18.339 20.6311 18.5902C20.6311 18.8413 20.405 19.0674 20.1539 19.0674C19.8776 19.0674 19.6766 18.8413 19.6766 18.5902C19.6766 18.339 19.8776 18.1129 20.1539 18.1129Z" fill="white"/>
+        <path d="M21.077 23.9997C21.077 23.4065 20.5244 22.9231 19.8462 22.9231C19.1681 22.9231 18.6155 23.4064 18.6155 23.9997C18.6155 24.5929 19.1681 25.0763 19.8462 25.0763C20.5244 25.0982 21.077 24.5929 21.077 23.9997ZM19.8462 24.4391C19.57 24.4391 19.369 24.2413 19.369 24.0216C19.369 23.8019 19.5951 23.6042 19.8462 23.6042C20.1225 23.6042 20.3235 23.8019 20.3235 24.0216C20.3235 24.2413 20.1225 24.4391 19.8462 24.4391Z" fill="white"/>
+        <path d="M21.3846 28.4614C20.7064 28.4614 20.1538 29.014 20.1538 29.6922C20.1538 30.3704 20.7064 30.923 21.3846 30.923C22.0628 30.923 22.6153 30.3704 22.6153 29.6922C22.6153 29.014 22.0628 28.4614 21.3846 28.4614ZM21.3846 30.1945C21.1083 30.1945 20.9074 29.9685 20.9074 29.7173C20.9074 29.4661 21.1334 29.2401 21.3846 29.2401C21.6609 29.2401 21.8618 29.4661 21.8618 29.7173C21.8618 29.9685 21.6609 30.1945 21.3846 30.1945Z" fill="white"/>
+        <path d="M29.6922 23.8462C29.0141 23.8462 28.4614 24.3297 28.4614 24.9231C28.4614 25.5165 29.014 26 29.6922 26C30.3704 26 30.923 25.5165 30.923 24.9231C30.923 24.3297 30.3704 23.8462 29.6922 23.8462ZM29.6922 25.3407C29.4159 25.3407 29.215 25.1429 29.215 24.9231C29.215 24.7033 29.441 24.5055 29.6922 24.5055C29.9685 24.5055 30.1694 24.7033 30.1694 24.9231C30.1694 25.1429 29.9685 25.3407 29.6922 25.3407Z" fill="white"/>
+        <path d="M26.4614 26.9231C25.8681 26.9231 25.3845 27.4757 25.3845 28.1539C25.3845 28.8321 25.868 29.3846 26.4614 29.3846C27.0549 29.3846 27.5384 28.8321 27.5384 28.1539C27.5384 27.4757 27.0549 26.9231 26.4614 26.9231ZM26.4614 28.6562C26.2197 28.6562 26.0439 28.4302 26.0439 28.179C26.0439 27.9278 26.2417 27.7018 26.4614 27.7018C26.7032 27.7018 26.879 27.9278 26.879 28.179C26.879 28.4302 26.7032 28.6562 26.4614 28.6562Z" fill="white"/>
+        <path d="M26.6153 22.4614C26.6153 21.8681 26.0628 21.3845 25.3846 21.3845C24.7064 21.3845 24.1538 21.868 24.1538 22.4614C24.1538 23.0549 24.7064 23.5384 25.3846 23.5384C26.0628 23.5384 26.6153 23.0549 26.6153 22.4614ZM24.8822 22.4614C24.8822 22.2197 25.1083 22.0439 25.3595 22.0439C25.6357 22.0439 25.8367 22.2417 25.8367 22.4614C25.8367 22.6812 25.6106 22.879 25.3595 22.879C25.1083 22.879 24.8822 22.7032 24.8822 22.4614Z" fill="white"/>
+        <path d="M14.6153 20.7693C14.6153 20.0912 14.1318 19.5386 13.5383 19.5386C12.9449 19.5386 12.4614 20.0912 12.4614 20.7693C12.4614 21.4475 12.9449 22.0001 13.5383 22.0001C14.1318 22.0001 14.6153 21.4475 14.6153 20.7693ZM13.5383 21.2466C13.2966 21.2466 13.1208 21.0205 13.1208 20.7693C13.1208 20.5182 13.3186 20.2921 13.5383 20.2921C13.7801 20.2921 13.9559 20.5182 13.9559 20.7693C13.9559 21.0205 13.7581 21.2466 13.5383 21.2466Z" fill="white"/>
+        <path d="M14.9232 25.6924C14.245 25.6924 13.6924 26.245 13.6924 26.9232C13.6924 27.6013 14.245 28.1539 14.9232 28.1539C15.6013 28.1539 16.1539 27.6013 16.1539 26.9232C16.1539 26.245 15.6013 25.6924 14.9232 25.6924ZM14.9232 27.4255C14.6469 27.4255 14.4459 27.1994 14.4459 26.9483C14.4459 26.6971 14.672 26.471 14.9232 26.471C15.1994 26.471 15.4004 26.6971 15.4004 26.9483C15.4004 27.1994 15.1994 27.4255 14.9232 27.4255Z" fill="white"/>
+        <path d="M31.2395 20.7177L31.0941 20.5L30.852 20.5484C30.6824 20.5726 30.5129 20.5726 30.3434 20.5726C29.1567 20.5726 28.0669 19.9435 27.5098 18.9032L27.4129 18.7096H27.195C27.1223 18.7096 27.0739 18.7096 27.0012 18.7338H26.9286C25.0396 18.7338 23.4896 17.1855 23.4896 15.2984C23.4896 14.5484 23.7318 13.8467 24.1677 13.2177L24.313 13.0242L24.1919 12.8064C23.9497 12.4193 23.8286 11.9355 23.8286 11.4516C23.8286 11.1855 23.8771 10.9193 23.974 10.6048L24.095 10.1935L23.6833 10.121C23.1505 10.0484 22.5935 10 22.0122 10C15.4005 10 10 15.371 10 22C10 28.629 15.3764 34 22.0122 34C28.3571 34 33.6126 29.0403 33.9758 22.7255L34 22.411L33.6852 22.3384C32.668 22.1691 31.8203 21.5885 31.2391 20.7175L31.2395 20.7177ZM22.0122 33.3227C15.7879 33.3227 10.7262 28.2662 10.7262 22.0482C10.7262 15.8303 15.7878 10.7738 22.0122 10.7738C22.3997 10.7738 22.7871 10.798 23.1746 10.8464C23.1262 11.0641 23.102 11.2818 23.102 11.4754C23.102 12.0076 23.2231 12.5399 23.4653 12.9996C23.0051 13.7012 22.7629 14.4996 22.7629 15.2979C22.7629 17.5963 24.6277 19.4592 26.9284 19.4592H27.0011C27.7276 20.5963 28.987 21.2979 30.3674 21.2979H30.7791C31.3846 22.1447 32.2565 22.7495 33.2494 23.0156C32.7408 28.8221 27.8729 33.3224 22.0121 33.3224L22.0122 33.3227Z" fill="white"/>
+        <path d="M28.1539 14.0001C28.1539 13.3219 27.6013 12.7693 26.9232 12.7693C26.245 12.7693 25.6924 13.3219 25.6924 14.0001C25.6924 14.6782 26.245 15.2308 26.9232 15.2308C27.6013 15.2308 28.1539 14.6782 28.1539 14.0001ZM26.446 14.0001C26.446 13.7238 26.672 13.5228 26.9232 13.5228C27.1995 13.5228 27.4004 13.7489 27.4004 14.0001C27.4004 14.2512 27.1744 14.4773 26.9232 14.4773C26.6469 14.4773 26.446 14.2763 26.446 14.0001Z" fill="white"/>
+        <path d="M29.6924 18.0001C29.6924 18.6782 30.245 19.2308 30.9232 19.2308C31.6013 19.2308 32.1539 18.6782 32.1539 18.0001C32.1539 17.3219 31.6013 16.7693 30.9232 16.7693C30.245 16.7693 29.6924 17.3219 29.6924 18.0001ZM30.9232 17.5228C31.1994 17.5228 31.4004 17.7489 31.4004 18.0001C31.4004 18.2512 31.1743 18.4773 30.9232 18.4773C30.6469 18.4773 30.4459 18.2512 30.4459 18.0001C30.4459 17.7489 30.6469 17.5228 30.9232 17.5228Z" fill="white"/>
+      </svg>        
+    </div>
+    <p class="cookie__p">We use third-party <a href="#">cookies</a> in order to personalize your site experience</p>
+    <div class="cookie__btns">
+      <a href="#" id="cookie_decline"  class="cookie__btn btn btn_primary">Decline</a>
+      <a href="#" id="cookie_allow" class="cookie__btn btn">Allow</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Form modal -->
+  <div class="modal" id="login">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign in</h2>
+    </div>
+    <form action="#" id="login_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="email" name="login_email" id="login_email" class="input__input" placeholder="Email">
+        <label for="login_email">Email</label>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="login_password" id="login_password" class="input__input" placeholder="Password">
+        <label for="login_password">Password</label>
+        <div class="input_password-btn" id="login_show">Show</div>
+      </div>
+      <a href="#forgot" data-fancybox class="modal-form__forgot btn_text">Forgot password?</a>
+      <button type="submit" class="modal-form__btn btn">Sign in</button>
+    </form>
+    <p class="modal__bot">Don’t have an account? <a href="#sign-up" data-fancybox>Click here to sing up</a></p>
+  </div>
+</div>
+  <div class="modal" id="sign-up">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign up</h2>
+    </div>
+    <form action="#" id="signup_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="name" name="signup_name" id="signup_name" class="input__input" placeholder="Company name">
+        <label for="signup_name">Company name</label>
+      </div>
+      <div class="modal-form__input input">
+        <input type="email" name="signup_email" id="signup_email" class="input__input" placeholder="Email">
+        <label for="signup_email">Email</label>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="signup_password" id="signup_password" class="input__input" placeholder="Password">
+        <label for="signup_password">Password</label>
+        <div class="input_password-btn" id="signup_show">Show</div>
+      </div>
+      <input type="submit" value="Sign up" class="modal-form__btn btn">
+    </form>
+    <div class="modal__privacy">
+      By signing up i agree to the <a href="#" class="modal__privacy_btn">Terms of Use</a> and <a href="#" class="modal__privacy_btn">Privacy Policy</a>
+    </div>
+    <p class="modal__bot">Already have an account ? <a href="#login" data-fancybox>Click here to sing in</a></p>
+  </div>
+</div>
+
+<div class="modal" id="sign-up_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign up</h2>
+      <p class="modal__head-p">Please check your email we have sent you a link to confirm your registration</p>
+    </div>
+    <a href="#sign-up_confirmed" data-fancybox class="modal__btn btn">Sign in</a>
+  </div>
+</div>
+
+<div class="modal" id="sign-up_confirmed">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Registration is confirmed</h2>
+      <p class="modal__head-p">Now you can log in to your account</p>
+    </div>
+    <a href="#login" data-fancybox class="modal__btn btn">Login</a>
+  </div>
+</div>
+  <div class="modal" id="forgot">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Forgot password?</h2>
+      <p class="modal__head-p">Don’t worry! It happens. Please enter the Email associated with your account</p>
+    </div>
+    <form action="#" id="forgot_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="email" name="forgot_email" id="forgot_email" class="input__input" placeholder="Email">
+        <label for="forgot_email">Email</label>
+      </div>
+      <button type="submit" class="modal-form__btn btn">Send</button>
+    </form>
+    <p class="modal__bot_btns"><a href="#sign-up" data-fancybox>Sing up</a>/<a href="#login" data-fancybox>Login</a></p>
+  </div>
+</div>
+
+<div class="modal" id="forgot_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Forgot password?</h2>
+      <p class="modal__head-p">Please check your Email, we sent you the link for password recovery</p>
+    </div>
+    <a href="#" data-fancybox-close class="modal__btn btn">Close</a>
+  </div>
+</div>
+  <div class="modal" id="reset">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Reset password</h2>
+      <p class="modal__head-p">Please type something you will remember</p>
+    </div>
+    <form action="#" id="resett_form" class="modal__form modal-form">
+      <div class="modal-form__input input input_password">
+        <input type="password" name="reset_password" id="reset_password" class="input__input" placeholder="Password">
+        <label for="reset_password">Password</label>
+        <div class="input_password-btn" id="reset_show">Show</div>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="reset_password2" id="reset_password2" class="input__input" placeholder="Password">
+        <label for="reset_password2">Password</label>
+        <div class="input_password-btn" id="reset_show2">Show</div>
+      </div>
+      <button type="submit" class="modal-form__btn btn">Reset password</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="reset_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Password changed</h2>
+      <p class="modal__head-p">Your password has been changed succesfully</p>
+    </div>
+    <a href="#login" data-fancybox class="modal__btn btn">Back to login</a>
+  </div>
+</div>
+
+  <script src="js/plugins/plugins.min.js?_v=20230212185734"></script>
+
+<script src="js/app.min.js?_v=20230212185734"></script>
+ 
+</body>
+
+</html>

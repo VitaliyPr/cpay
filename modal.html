@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Модалки</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            
+            if (pageWidth > 1279) {
+                let value = (pageWidth * 10 / 1280).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20230212185734"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20230212185734">
+
+
+
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="md">
+    <div class="header__wrap">
+      <div class="header__body">
+        <div class="header__logo logo">
+          <img src="img/cpay-logo.svg" alt="" loading="lazy" class="img-full">       
+        </div>
+        <a href="#" class="header__support support">support@cpay.team</a>
+      </div>
+      <div class="header__btns">
+        <a href="#login" data-fancybox class="header__btn btn btn_primary">Login</a>
+        <a href="#sign-up" data-fancybox class="header__btn btn">Sign up</a>
+      </div>
+      <a href="#login" data-fancybox class="header__login">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 4.00001C7.58717 4.00001 4 7.58718 4 12.0001C4 16.413 7.58717 20.0001 12.0001 20.0001C14.4049 20.0001 16.5647 18.9349 18.0321 17.251C18.033 17.25 18.034 17.2492 18.0349 17.2482C18.0355 17.2473 18.0361 17.2464 18.0367 17.2455C19.2592 15.8403 20 14.0055 20 12.0001C20 7.58717 16.4128 4 11.9999 4L12.0001 4.00001ZM12.0001 4.94119C15.9041 4.94119 19.059 8.09608 19.059 12.0001C19.059 13.504 18.5902 14.8956 17.7916 16.0396C16.9698 14.4929 15.567 13.3524 13.9201 12.8475C14.6817 12.2665 15.1756 11.3493 15.1756 10.3218C15.1756 8.57385 13.7479 7.14715 12.0001 7.14715C10.2524 7.14715 8.82553 8.57397 8.82553 10.3218C8.82553 11.3491 9.31873 12.2655 10.0801 12.8465C8.4331 13.3517 7.03123 14.4942 6.20979 16.0414C5.41035 14.8971 4.94135 13.5047 4.94135 12C4.94135 8.09593 8.09623 4.94105 12.0003 4.94105L12.0001 4.94119ZM12.0001 8.08836C13.2393 8.08836 14.2336 9.08257 14.2336 10.3219C14.2336 11.561 13.2394 12.5563 12.0001 12.5563C10.7609 12.5563 9.76656 11.561 9.76656 10.3219C9.76656 9.08268 10.7608 8.08836 12.0001 8.08836ZM12.0001 13.5013C14.2328 13.5013 16.2404 14.8208 17.1361 16.8467C15.8498 18.2093 14.0258 19.059 12.0001 19.059C9.97394 19.059 8.15032 18.2089 6.86402 16.8457C7.75935 14.819 9.76691 13.5011 12.0001 13.5011V13.5013Z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main class="page">
+    <ul>
+      <li>
+        Логін:
+        <a href="#login" data-fancybox class="btn_text">Login</a>
+      </li>
+      <li>
+        Реєстрація:
+        <a href="#sign-up" data-fancybox class="btn_text">Sign up</a>
+      </li>
+      <li>
+        Реєстрація - успіх: 
+        <a href="#sign-up_success" data-fancybox class="btn_text">Sign up - success</a>
+      </li>
+      <li>
+        Реєстрацію підтверджено:
+        <a href="#sign-up_confirmed" data-fancybox class="btn_text">Registration is confirmed</a>
+      </li>
+      <li>
+        Забули пароль?
+        <a href="#forgot" data-fancybox class="btn_text">Reset password</a>
+      </li>
+      <li>
+        Забули пароль? - успіх:
+        <a href="#forgot_success" data-fancybox class="btn_text">Forgot password? - success</a>
+      </li>
+      <li>
+        Скинути пароль:
+        <a href="#reset" data-fancybox class="btn_text">Forgot password?</a>
+      </li>
+      <li>
+        Скинути пароль - успіх:
+        <a href="#reset_success" data-fancybox class="btn_text">Forgot password? - success</a>
+      </li>
+    </ul>
+
+  </main>
+
+  <div class="cookie">
+  <div class="cookie__wrap">
+    <div class="cookie__icon">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="21.5" fill="#252A3F" stroke="#252A3F"/>
+        <path d="M16.1539 14.9231C15.4757 14.9231 14.9231 15.4757 14.9231 16.1539C14.9231 16.8321 15.4757 17.3846 16.1539 17.3846C16.8321 17.3846 17.3846 16.8321 17.3846 16.1539C17.3846 15.4757 16.8321 14.9231 16.1539 14.9231ZM16.1539 16.6311C15.8776 16.6311 15.6766 16.405 15.6766 16.1538C15.6766 15.9027 15.9027 15.6766 16.1539 15.6766C16.4302 15.6766 16.6311 15.9027 16.6311 16.1538C16.6311 16.405 16.4302 16.6311 16.1539 16.6311Z" fill="white"/>
+        <path d="M20.1539 19.8461C20.832 19.8461 21.3846 19.2935 21.3846 18.6153C21.3846 17.9371 20.8321 17.3845 20.1539 17.3845C19.4757 17.3845 18.9231 17.9371 18.9231 18.6153C18.9231 19.2935 19.4757 19.8461 20.1539 19.8461ZM20.1539 18.1129C20.4302 18.1129 20.6311 18.339 20.6311 18.5902C20.6311 18.8413 20.405 19.0674 20.1539 19.0674C19.8776 19.0674 19.6766 18.8413 19.6766 18.5902C19.6766 18.339 19.8776 18.1129 20.1539 18.1129Z" fill="white"/>
+        <path d="M21.077 23.9997C21.077 23.4065 20.5244 22.9231 19.8462 22.9231C19.1681 22.9231 18.6155 23.4064 18.6155 23.9997C18.6155 24.5929 19.1681 25.0763 19.8462 25.0763C20.5244 25.0982 21.077 24.5929 21.077 23.9997ZM19.8462 24.4391C19.57 24.4391 19.369 24.2413 19.369 24.0216C19.369 23.8019 19.5951 23.6042 19.8462 23.6042C20.1225 23.6042 20.3235 23.8019 20.3235 24.0216C20.3235 24.2413 20.1225 24.4391 19.8462 24.4391Z" fill="white"/>
+        <path d="M21.3846 28.4614C20.7064 28.4614 20.1538 29.014 20.1538 29.6922C20.1538 30.3704 20.7064 30.923 21.3846 30.923C22.0628 30.923 22.6153 30.3704 22.6153 29.6922C22.6153 29.014 22.0628 28.4614 21.3846 28.4614ZM21.3846 30.1945C21.1083 30.1945 20.9074 29.9685 20.9074 29.7173C20.9074 29.4661 21.1334 29.2401 21.3846 29.2401C21.6609 29.2401 21.8618 29.4661 21.8618 29.7173C21.8618 29.9685 21.6609 30.1945 21.3846 30.1945Z" fill="white"/>
+        <path d="M29.6922 23.8462C29.0141 23.8462 28.4614 24.3297 28.4614 24.9231C28.4614 25.5165 29.014 26 29.6922 26C30.3704 26 30.923 25.5165 30.923 24.9231C30.923 24.3297 30.3704 23.8462 29.6922 23.8462ZM29.6922 25.3407C29.4159 25.3407 29.215 25.1429 29.215 24.9231C29.215 24.7033 29.441 24.5055 29.6922 24.5055C29.9685 24.5055 30.1694 24.7033 30.1694 24.9231C30.1694 25.1429 29.9685 25.3407 29.6922 25.3407Z" fill="white"/>
+        <path d="M26.4614 26.9231C25.8681 26.9231 25.3845 27.4757 25.3845 28.1539C25.3845 28.8321 25.868 29.3846 26.4614 29.3846C27.0549 29.3846 27.5384 28.8321 27.5384 28.1539C27.5384 27.4757 27.0549 26.9231 26.4614 26.9231ZM26.4614 28.6562C26.2197 28.6562 26.0439 28.4302 26.0439 28.179C26.0439 27.9278 26.2417 27.7018 26.4614 27.7018C26.7032 27.7018 26.879 27.9278 26.879 28.179C26.879 28.4302 26.7032 28.6562 26.4614 28.6562Z" fill="white"/>
+        <path d="M26.6153 22.4614C26.6153 21.8681 26.0628 21.3845 25.3846 21.3845C24.7064 21.3845 24.1538 21.868 24.1538 22.4614C24.1538 23.0549 24.7064 23.5384 25.3846 23.5384C26.0628 23.5384 26.6153 23.0549 26.6153 22.4614ZM24.8822 22.4614C24.8822 22.2197 25.1083 22.0439 25.3595 22.0439C25.6357 22.0439 25.8367 22.2417 25.8367 22.4614C25.8367 22.6812 25.6106 22.879 25.3595 22.879C25.1083 22.879 24.8822 22.7032 24.8822 22.4614Z" fill="white"/>
+        <path d="M14.6153 20.7693C14.6153 20.0912 14.1318 19.5386 13.5383 19.5386C12.9449 19.5386 12.4614 20.0912 12.4614 20.7693C12.4614 21.4475 12.9449 22.0001 13.5383 22.0001C14.1318 22.0001 14.6153 21.4475 14.6153 20.7693ZM13.5383 21.2466C13.2966 21.2466 13.1208 21.0205 13.1208 20.7693C13.1208 20.5182 13.3186 20.2921 13.5383 20.2921C13.7801 20.2921 13.9559 20.5182 13.9559 20.7693C13.9559 21.0205 13.7581 21.2466 13.5383 21.2466Z" fill="white"/>
+        <path d="M14.9232 25.6924C14.245 25.6924 13.6924 26.245 13.6924 26.9232C13.6924 27.6013 14.245 28.1539 14.9232 28.1539C15.6013 28.1539 16.1539 27.6013 16.1539 26.9232C16.1539 26.245 15.6013 25.6924 14.9232 25.6924ZM14.9232 27.4255C14.6469 27.4255 14.4459 27.1994 14.4459 26.9483C14.4459 26.6971 14.672 26.471 14.9232 26.471C15.1994 26.471 15.4004 26.6971 15.4004 26.9483C15.4004 27.1994 15.1994 27.4255 14.9232 27.4255Z" fill="white"/>
+        <path d="M31.2395 20.7177L31.0941 20.5L30.852 20.5484C30.6824 20.5726 30.5129 20.5726 30.3434 20.5726C29.1567 20.5726 28.0669 19.9435 27.5098 18.9032L27.4129 18.7096H27.195C27.1223 18.7096 27.0739 18.7096 27.0012 18.7338H26.9286C25.0396 18.7338 23.4896 17.1855 23.4896 15.2984C23.4896 14.5484 23.7318 13.8467 24.1677 13.2177L24.313 13.0242L24.1919 12.8064C23.9497 12.4193 23.8286 11.9355 23.8286 11.4516C23.8286 11.1855 23.8771 10.9193 23.974 10.6048L24.095 10.1935L23.6833 10.121C23.1505 10.0484 22.5935 10 22.0122 10C15.4005 10 10 15.371 10 22C10 28.629 15.3764 34 22.0122 34C28.3571 34 33.6126 29.0403 33.9758 22.7255L34 22.411L33.6852 22.3384C32.668 22.1691 31.8203 21.5885 31.2391 20.7175L31.2395 20.7177ZM22.0122 33.3227C15.7879 33.3227 10.7262 28.2662 10.7262 22.0482C10.7262 15.8303 15.7878 10.7738 22.0122 10.7738C22.3997 10.7738 22.7871 10.798 23.1746 10.8464C23.1262 11.0641 23.102 11.2818 23.102 11.4754C23.102 12.0076 23.2231 12.5399 23.4653 12.9996C23.0051 13.7012 22.7629 14.4996 22.7629 15.2979C22.7629 17.5963 24.6277 19.4592 26.9284 19.4592H27.0011C27.7276 20.5963 28.987 21.2979 30.3674 21.2979H30.7791C31.3846 22.1447 32.2565 22.7495 33.2494 23.0156C32.7408 28.8221 27.8729 33.3224 22.0121 33.3224L22.0122 33.3227Z" fill="white"/>
+        <path d="M28.1539 14.0001C28.1539 13.3219 27.6013 12.7693 26.9232 12.7693C26.245 12.7693 25.6924 13.3219 25.6924 14.0001C25.6924 14.6782 26.245 15.2308 26.9232 15.2308C27.6013 15.2308 28.1539 14.6782 28.1539 14.0001ZM26.446 14.0001C26.446 13.7238 26.672 13.5228 26.9232 13.5228C27.1995 13.5228 27.4004 13.7489 27.4004 14.0001C27.4004 14.2512 27.1744 14.4773 26.9232 14.4773C26.6469 14.4773 26.446 14.2763 26.446 14.0001Z" fill="white"/>
+        <path d="M29.6924 18.0001C29.6924 18.6782 30.245 19.2308 30.9232 19.2308C31.6013 19.2308 32.1539 18.6782 32.1539 18.0001C32.1539 17.3219 31.6013 16.7693 30.9232 16.7693C30.245 16.7693 29.6924 17.3219 29.6924 18.0001ZM30.9232 17.5228C31.1994 17.5228 31.4004 17.7489 31.4004 18.0001C31.4004 18.2512 31.1743 18.4773 30.9232 18.4773C30.6469 18.4773 30.4459 18.2512 30.4459 18.0001C30.4459 17.7489 30.6469 17.5228 30.9232 17.5228Z" fill="white"/>
+      </svg>        
+    </div>
+    <p class="cookie__p">We use third-party <a href="#">cookies</a> in order to personalize your site experience</p>
+    <div class="cookie__btns">
+      <a href="#" id="cookie_decline"  class="cookie__btn btn btn_primary">Decline</a>
+      <a href="#" id="cookie_allow" class="cookie__btn btn">Allow</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Form modal -->
+  <div class="modal" id="login">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign in</h2>
+    </div>
+    <form action="#" id="login_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="email" name="login_email" id="login_email" class="input__input" placeholder="Email">
+        <label for="login_email">Email</label>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="login_password" id="login_password" class="input__input" placeholder="Password">
+        <label for="login_password">Password</label>
+        <div class="input_password-btn" id="login_show">Show</div>
+      </div>
+      <a href="#forgot" data-fancybox class="modal-form__forgot btn_text">Forgot password?</a>
+      <button type="submit" class="modal-form__btn btn">Sign in</button>
+    </form>
+    <p class="modal__bot">Don’t have an account? <a href="#sign-up" data-fancybox>Click here to sing up</a></p>
+  </div>
+</div>
+  <div class="modal" id="sign-up">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign up</h2>
+    </div>
+    <form action="#" id="signup_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="name" name="signup_name" id="signup_name" class="input__input" placeholder="Company name">
+        <label for="signup_name">Company name</label>
+      </div>
+      <div class="modal-form__input input">
+        <input type="email" name="signup_email" id="signup_email" class="input__input" placeholder="Email">
+        <label for="signup_email">Email</label>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="signup_password" id="signup_password" class="input__input" placeholder="Password">
+        <label for="signup_password">Password</label>
+        <div class="input_password-btn" id="signup_show">Show</div>
+      </div>
+      <input type="submit" value="Sign up" class="modal-form__btn btn">
+    </form>
+    <div class="modal__privacy">
+      By signing up i agree to the <a href="#" class="modal__privacy_btn">Terms of Use</a> and <a href="#" class="modal__privacy_btn">Privacy Policy</a>
+    </div>
+    <p class="modal__bot">Already have an account ? <a href="#login" data-fancybox>Click here to sing in</a></p>
+  </div>
+</div>
+
+<div class="modal" id="sign-up_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Sign up</h2>
+      <p class="modal__head-p">Please check your email we have sent you a link to confirm your registration</p>
+    </div>
+    <a href="#sign-up_confirmed" data-fancybox class="modal__btn btn">Sign in</a>
+  </div>
+</div>
+
+<div class="modal" id="sign-up_confirmed">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Registration is confirmed</h2>
+      <p class="modal__head-p">Now you can log in to your account</p>
+    </div>
+    <a href="#login" data-fancybox class="modal__btn btn">Login</a>
+  </div>
+</div>
+  <div class="modal" id="forgot">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Forgot password?</h2>
+      <p class="modal__head-p">Don’t worry! It happens. Please enter the Email associated with your account</p>
+    </div>
+    <form action="#" id="forgot_form" class="modal__form modal-form">
+      <div class="modal-form__input input">
+        <input type="email" name="forgot_email" id="forgot_email" class="input__input" placeholder="Email">
+        <label for="forgot_email">Email</label>
+      </div>
+      <button type="submit" class="modal-form__btn btn">Send</button>
+    </form>
+    <p class="modal__bot_btns"><a href="#sign-up" data-fancybox>Sing up</a>/<a href="#login" data-fancybox>Login</a></p>
+  </div>
+</div>
+
+<div class="modal" id="forgot_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Forgot password?</h2>
+      <p class="modal__head-p">Please check your Email, we sent you the link for password recovery</p>
+    </div>
+    <a href="#" data-fancybox-close class="modal__btn btn">Close</a>
+  </div>
+</div>
+  <div class="modal" id="reset">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Reset password</h2>
+      <p class="modal__head-p">Please type something you will remember</p>
+    </div>
+    <form action="#" id="resett_form" class="modal__form modal-form">
+      <div class="modal-form__input input input_password">
+        <input type="password" name="reset_password" id="reset_password" class="input__input" placeholder="Password">
+        <label for="reset_password">Password</label>
+        <div class="input_password-btn" id="reset_show">Show</div>
+      </div>
+      <div class="modal-form__input input input_password">
+        <input type="password" name="reset_password2" id="reset_password2" class="input__input" placeholder="Password">
+        <label for="reset_password2">Password</label>
+        <div class="input_password-btn" id="reset_show2">Show</div>
+      </div>
+      <button type="submit" class="modal-form__btn btn">Reset password</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="reset_success">
+  <div class="modal__wrap">
+    <div class="modal__head">
+      <h2 class="modal__head-title">Password changed</h2>
+      <p class="modal__head-p">Your password has been changed succesfully</p>
+    </div>
+    <a href="#login" data-fancybox class="modal__btn btn">Back to login</a>
+  </div>
+</div>
+
+  <script src="js/plugins/plugins.min.js?_v=20230212185734"></script>
+
+<script src="js/app.min.js?_v=20230212185734"></script>
+ 
+</body>
+
+</html>
