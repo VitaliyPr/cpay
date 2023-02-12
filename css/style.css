@@ -979,7 +979,7 @@ svg {
 
 .ready__wrap {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   padding: 6.4rem 0 10.8rem;
 }
 
@@ -2468,15 +2468,14 @@ svg {
 
   .integrate__table::-webkit-scrollbar {
     background-color: var(--scroll-bg);
-    border: 0.7rem solid transparent;
-    min-width: 2rem;
+    border: 0.6rem solid transparent;
     border-radius: 100px;
     background-clip: content-box;
   }
 
   .integrate__table::-webkit-scrollbar-thumb {
     background-color: var(--white);
-    border: 0.7rem solid transparent;
+    border: 0.6rem solid transparent;
     border-radius: 100px;
     background-clip: content-box;
   }
@@ -2484,6 +2483,7 @@ svg {
   .integrate__table-item_mob {
     width: 50.9rem;
     height: auto;
+    margin-bottom: 2.4rem;
   }
 
   .integrate__bg {
