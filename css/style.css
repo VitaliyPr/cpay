@@ -1156,6 +1156,11 @@ svg {
   margin-bottom: 2.4rem;
 }
 
+.select-nolabel label {
+  opacity: 0;
+  z-index: -1;
+}
+
 .select:focus-within label {
   font-size: 1rem;
   line-height: 1.2;
@@ -1176,25 +1181,17 @@ svg {
   top: -0.8rem;
   z-index: 2;
   width: auto;
+  opacity: 1;
+  z-index: 1;
 }
 
-.select_crypto .current::before {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_526_159' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='16' height='16'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_526_159)'%3E%3Cpath d='M8 0C12.4181 0 16 3.58192 16 8C16 12.4181 12.4179 16 8 16C3.58208 16 0 12.419 0 8C0 3.58096 3.58144 0 8 0Z' fill='%2353AE94'/%3E%3Cpath d='M8.98734 6.93402V5.74394H11.7088V3.93066H4.29822V5.74394H7.01998V6.93306C4.80798 7.03466 3.14478 7.47274 3.14478 7.99754C3.14478 8.52234 4.80878 8.96042 7.01998 9.06266V12.8747H8.98798V9.06235C11.196 8.96042 12.8558 8.52266 12.8558 7.99834C12.8558 7.47402 11.1954 7.03594 8.98734 6.93402ZM8.98798 8.73946C8.93246 8.74298 8.64718 8.75914 8.01198 8.75914C7.50414 8.75914 7.14685 8.74474 7.02094 8.73818V8.73978C5.0667 8.65322 3.60798 8.3129 3.60798 7.9057C3.60798 7.4985 5.06686 7.15866 7.02094 7.07194V8.40074C7.14893 8.40954 7.51501 8.43114 8.02029 8.43114C8.62717 8.43114 8.9323 8.40586 8.9883 8.40074V7.07194C10.9387 7.15882 12.3941 7.49946 12.3941 7.90522C12.3941 8.31098 10.9378 8.65258 8.98798 8.73946Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+.select_crypto .current svg {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 0.8rem;
 }
 
-.select_crypto .list .option::before {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_526_159' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='0' y='0' width='16' height='16'%3E%3Cpath d='M16 0H0V16H16V0Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_526_159)'%3E%3Cpath d='M8 0C12.4181 0 16 3.58192 16 8C16 12.4181 12.4179 16 8 16C3.58208 16 0 12.419 0 8C0 3.58096 3.58144 0 8 0Z' fill='%2353AE94'/%3E%3Cpath d='M8.98734 6.93402V5.74394H11.7088V3.93066H4.29822V5.74394H7.01998V6.93306C4.80798 7.03466 3.14478 7.47274 3.14478 7.99754C3.14478 8.52234 4.80878 8.96042 7.01998 9.06266V12.8747H8.98798V9.06235C11.196 8.96042 12.8558 8.52266 12.8558 7.99834C12.8558 7.47402 11.1954 7.03594 8.98734 6.93402ZM8.98798 8.73946C8.93246 8.74298 8.64718 8.75914 8.01198 8.75914C7.50414 8.75914 7.14685 8.74474 7.02094 8.73818V8.73978C5.0667 8.65322 3.60798 8.3129 3.60798 7.9057C3.60798 7.4985 5.06686 7.15866 7.02094 7.07194V8.40074C7.14893 8.40954 7.51501 8.43114 8.02029 8.43114C8.62717 8.43114 8.9323 8.40586 8.9883 8.40074V7.07194C10.9387 7.15882 12.3941 7.49946 12.3941 7.90522C12.3941 8.31098 10.9378 8.65258 8.98798 8.73946Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+.select_crypto .list .option svg {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 0.8rem;
@@ -1336,6 +1333,7 @@ svg {
   top: -0.8rem;
   z-index: 2;
   width: auto;
+  opacity: 1;
 }
 
 .invoice {
