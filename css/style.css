@@ -1185,13 +1185,13 @@ svg {
   z-index: 1;
 }
 
-.select_crypto .current svg {
+.select_crypto .current img {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 0.8rem;
 }
 
-.select_crypto .list .option svg {
+.select_crypto .list .option img {
   width: 1.6rem;
   height: 1.6rem;
   margin-right: 0.8rem;
@@ -1228,6 +1228,21 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.select .nice-select#crypto .option {
+  background-repeat: no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: 1.6rem 45%;
+  padding-left: 4rem;
+}
+
+.select .nice-select#crypto .current {
+  background-repeat: no-repeat;
+  background-size: 1.6rem 1.6rem;
+  background-position: 0 50%;
+  padding-left: 2.4rem;
+  height: 1.6rem;
 }
 
 .select .nice-select .list {
@@ -2534,7 +2549,7 @@ svg {
     grid-row-gap: 0.8rem;
   }
 
-  .wallet__item svg {
+  .wallet__item img {
     max-width: 7.5rem;
   }
 }
@@ -2636,6 +2651,7 @@ svg {
 
   .select:hover label {
     border-color: var(--primary);
+    z-index: 99;
   }
 
   .copybtn:hover svg path {
