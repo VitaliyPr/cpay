@@ -2039,6 +2039,10 @@ svg {
   z-index: 2;
 }
 
+.section__wrap {
+  padding: 4rem 0;
+}
+
 .section__col h2 {
   font-family: RacingSansOne;
   font-weight: 400;
@@ -2047,7 +2051,7 @@ svg {
 }
 
 .section__col h2:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section__col h3 {
@@ -2058,7 +2062,7 @@ svg {
 }
 
 .section__col h3:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .section__col h4 {
@@ -2069,7 +2073,7 @@ svg {
 }
 
 .section__col h4:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .section__col p {
@@ -2079,11 +2083,11 @@ svg {
 }
 
 .section__col p:not(:last-child) {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .section__col ul:not(:last-child) {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .section__col ul li {
@@ -2110,7 +2114,7 @@ svg {
 }
 
 .section__col .upload-file__wrapper {
-  width: 25.4rem;
+  width: 100%;
   height: 12.6rem;
 }
 
@@ -2119,6 +2123,8 @@ svg {
 }
 
 .section__col .upload-file__input {
+  position: absolute;
+  overflow: hidden;
   opacity: 0;
   z-index: -1;
   width: 0.4px;
@@ -2397,6 +2403,10 @@ svg {
     width: calc(100% - 6.4rem);
   }
 
+  .section__col form .btn {
+    width: 25.4rem;
+  }
+
   .section__col h2 {
     font-size: 4rem;
   }
@@ -2415,6 +2425,10 @@ svg {
 
   .section__col ul li:not(:last-child) {
     margin-bottom: 1.6rem;
+  }
+
+  .section__col .upload-file__wrapper {
+    width: 25.4rem;
   }
 }
 
@@ -2476,6 +2490,26 @@ svg {
   .cpay {
     padding-top: 2.4rem;
     padding-bottom: 12rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .section__wrap {
+    padding: 12rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 5rem;
+       -moz-column-gap: 5rem;
+            column-gap: 5rem;
+  }
+
+  .section__col {
+    width: 35%;
+  }
+
+  .section__col:nth-child(1) {
+    width: 65%;
   }
 }
 
@@ -2655,30 +2689,6 @@ svg {
     top: 8.9rem;
   }
 
-  .section__wrap {
-    padding: 16rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-column-gap: 5rem;
-       -moz-column-gap: 5rem;
-            column-gap: 5rem;
-  }
-
-  .section__col {
-    width: 35%;
-  }
-
-  .section__col:nth-child(1) {
-    width: 65%;
-  }
-
-  .section__col form {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 3rem;
-  }
-
   .section__col .upload-file__icon {
     width: 4.4rem;
   }
@@ -2758,13 +2768,11 @@ svg {
   .integrate__table-item {
     display: none;
   }
+}
 
+@media (max-width: 992px) {
   .section__col:nth-child(1):not(:last-child) {
     margin-bottom: 6rem;
-  }
-
-  .section__col .upload-file__wrapper {
-    margin: 0 auto;
   }
 }
 
@@ -3016,6 +3024,10 @@ svg {
 
   .wallet__item img {
     max-width: 7.5rem;
+  }
+
+  .section__col .upload-file__wrapper {
+    margin: 0 auto;
   }
 }
 
